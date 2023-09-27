@@ -9,3 +9,7 @@
  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/JustPractice/assets/94948198/00d07aee-fe0b-4c0f-bdbd-68a5dffd03cf">
 </p>
 
+## 영화좌석예매
+<p align="center">
+  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/JustPractice/assets/94948198/b1f602ab-abff-4b85-992e-b1cad2ae73b6">
+</p>
