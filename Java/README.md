@@ -13,3 +13,8 @@
 <p align="center">
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/JustPractice/assets/94948198/b1f602ab-abff-4b85-992e-b1cad2ae73b6">
 </p>
+
+## 일기장
+<p align="center">
+  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/JustPractice/assets/94948198/228c45c4-a2d8-4b7d-9709-28baf52cc0d2">
+</p>
