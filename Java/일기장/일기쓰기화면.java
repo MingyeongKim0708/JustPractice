@@ -55,16 +55,16 @@ public class 일기쓰기화면 {
 		// 색상
 		f.getContentPane().setBackground(Color.green);
 
-		t1.setBackground(Color.gray);
-		t1.setForeground(Color.white);
+		t1.setBackground(Color.yellow);
+		t1.setForeground(Color.black);
 		t1.setOpaque(true); // 불투명 true
 
-		t2.setBackground(Color.gray);
-		t2.setForeground(Color.white);
+		t2.setBackground(Color.yellow);
+		t2.setForeground(Color.black);
 		t2.setOpaque(true); // 불투명 true
 
-		t3.setBackground(Color.gray);
-		t3.setForeground(Color.white);
+		t3.setBackground(Color.yellow);
+		t3.setForeground(Color.black);
 		t3.setOpaque(true); // 불투명 true
 
 		save.setBackground(Color.yellow);
@@ -150,7 +150,7 @@ public class 일기쓰기화면 {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				생성된일기장개수 c1 = new 생성된일기장개수();
-				c1.count();
+				c1.count(f); //231005 생성된 일기장 개수 count 메서드에 JFrame f를 추가함 -> f위에서 JOptionPane.showMessageDialog이 뜰 것임
 			}
 		});
 
