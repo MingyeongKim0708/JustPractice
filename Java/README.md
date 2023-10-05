@@ -15,6 +15,12 @@
 </p>
 
 ## 일기장
+### 개선
+<p align="center">
+  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/JustPractice/assets/94948198/6754960a-a975-46d2-97af-4ae396c71485">
+</p>
+
+### 이전
 <p align="center">
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/JustPractice/assets/94948198/228c45c4-a2d8-4b7d-9709-28baf52cc0d2">
 </p>
