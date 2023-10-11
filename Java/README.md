@@ -29,3 +29,8 @@
 <p align="center">
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/116ca8ec-eafd-49be-94d7-31e02204e498">
 </p>
+
+### 문자판독기
+<p align="center">
+  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/532c7f76-c27c-43ef-afba-f9c4356c0ce0">
+</p>
