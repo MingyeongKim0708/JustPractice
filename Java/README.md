@@ -32,5 +32,5 @@
 
 ### 문자판독기
 <p align="center">
-  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/532c7f76-c27c-43ef-afba-f9c4356c0ce0">
+  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/bed8dc37-9d6a-456b-a363-d7eee5fd038c">
 </p>
