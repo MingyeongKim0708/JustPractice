@@ -25,17 +25,17 @@
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/JustPractice/assets/94948198/228c45c4-a2d8-4b7d-9709-28baf52cc0d2">
 </p>
 
-### 스레드그래픽 (PC방 시간 카운터)
+## 스레드그래픽 (PC방 시간 카운터)
 <p align="center">
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/116ca8ec-eafd-49be-94d7-31e02204e498">
 </p>
 
-### 문자판독기
+## 문자판독기
 <p align="center">
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/37124577-3301-4acd-93a5-e79354ae013e">
 </p>
 
-### 네이버 쇼핑 크롤링
+## 네이버 쇼핑 크롤링
 <p align="center">
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/b3370b71-ae24-4cfe-981b-c957789d069d">
 </p>
