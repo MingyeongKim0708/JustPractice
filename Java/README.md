@@ -34,3 +34,8 @@
 <p align="center">
   <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/37124577-3301-4acd-93a5-e79354ae013e">
 </p>
+
+### 네이버 쇼핑 크롤링
+<p align="center">
+  <img width=50% alt="image" src="https://github.com/MingyeongKim0708/justPractice/assets/94948198/b3370b71-ae24-4cfe-981b-c957789d069d">
+</p>
