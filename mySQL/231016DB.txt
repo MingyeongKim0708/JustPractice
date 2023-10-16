@@ -1,0 +1,81 @@
+231016 DB
+
+CRUD- DBMS(오라클, mySQL, mariaDB)에서 프로그래머에게 가장 중요한 개념(크루드)
+C-Create
+R-Read
+U-Update
+D-Delete
+
+==> 테이터가 들어갈 공간을 만들어두어야 함.
+==> 카테고리별로 db생성 --> 테이블생성
+==> 테이블(항목을 정해서 저장) : 정형데이터
+==> 저장할 대상(엔티티, 엔터티, entity) --> 테이블
+
+쇼핑몰
+쇼핑몰에 저장할 대상 - 회원정보,  상품정보, 게시판정보(Q/A, FAQ, 상품후기 등)
+쇼핑몰에 부가적으로 저장할 대상 - 주문정보, 연관정보
+
+데이터베이스 > 테이블 > 항목
+shop              > member > name, id, pw, tel
+shop                 > product > id, title, content, price, company
+==> 저장할 대상(entity, 엔티티) == 테이블
+shop                    >    order_list   > user, product_id, day, pay
+
+
+db생성 --> table생성 --> 데이터조작(CRUD)
+----------- 1 --------
+                      -------- 2-----------
+
+SQL분류
+1번: 저장할 대상/데이터를 정의하게 됨. Data Definition Language(DDL)
+2번: 저장된 데이터를 가지고 여러가지 조작(CRUD)을 하게됨. Data Manipulation Language(DML)
+0번: 계정관리, 백업복구, Data Control  Language(DCL)
+
+==> 회원정보와 주문정보테이블이 관계가 성립 --> 관계의 특징을 가지고 저장하는 방식(관계형DB, RDB)
+
+
+=========================================================================================
+mySQL 커뮤니티 버전
+Oracle express 버전
+==> 무료지만 기능이 제한됨
+
+프로페셔널, 엔터프라이즈 ==> 유료, 날짜 제한
+
+이걸로 연습하고 싶으면 PPT Oracle 1 p.77 참고해서 계정 언락하기
+
+===========================================================================================
+
+varchar(100) : ~100글자까지
+char(5) : 5글자 고정
+
+엔티티 관계 그림 (ERD)
+
+컨스트레인츠 == constraints == 제약조건
+pk설정, unique설정, check(조건설정)
+pk - not null, unique
+unique - unique체크, null (ex. 운전면허번호)
+check - ' >10 ' 등과 같은 조건 설정
+
+===========================================================================================
+
+백업 방법
+1) DB 전체 백업
+DB 우클릭 - 도구 - Dump Database - Export configuration - Start
+저장 위치 : Output folder 확인
+>>불러오기
+DB 우클릭 - 도구 - Restore Database - Input File - Start
+
+2) 테이블+제약조건 생성
+table 우클릭 - SQL 생성 - DDL - Copy
+
+3) 데이터 백업
+table 우클릭 - 데이터 내보내기 - CSV - 다음 
+저장 위치 : Directory 확인
+
+===========================================================================================
+
+DDL : 테이블 뼈대(스키마)와 관련된 작업(테이블생성+항목수정+테이블삭제)
+create table, alter table,  drop table
+truncate == delete from
+truncate: 스키마만 놔줌. 데이터만 drop(데이터복구X) ==> 데이터넣었던 저장공간까지를 삭제 --> 잘 안씀
+delete from: 스키마와는 상관없음. 데이터를 delete(데이터복구 O) ==> 저장공간을 지우지는 않고, null을 채우는 방식
