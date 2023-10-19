@@ -1,0 +1,101 @@
+231019
+
+데이터 전송할 때 데이터를 묶어서 값을 넣고 뺄 수 있는 클래스 : bag 역할
+Value Object (VO) = Data Transfer Object
+
+DB 연동하는 클래스 : CRUD 구현
+Data Access Object (DAO)
+
+전달할 데이터가 3개 이상이 되면 bag을 사용
+1,2개면 그냥 파라미터에 각각의 값을 넣는걸로!!
+
+
+
+----------------------------------------------------------------------
+질문사항
+insert, delete, update는 result를 return하는 방식으로 바꿔서 메소드가 이런 형태인데
+
+public int delete(MemberVO bag){
+...}
+
+select는 
+
+public MemberVO one(String id){
+...}
+
+아직 이런 메소드인데 이것도 위의 3개처럼 파라미터를 bag으로 받는 방식으로 바꿔줘야하는 건가요? 다른건 void라 return하는걸 넣을 수 있었는데 select는 이미 return하는게 있어서 이대로 두는 게 맞나요?
+
+insert문은 return result;를 넣어주면서 public int insert로 변경했는데 (원래는 void였으니까 return하는게 없어서 변경했을 때 바로 추가해도 문제가 안되는 것 같았음)
+
+select에도 원래 return bag;이 있어서 result를 넣어주려니까 return bag; 도 있고 return result;도 있고 두 개가 되어서 질문했습니다!
+
+--> result와 bag을 묶는 해시맵이나 어레이 리스트 같은걸 써야하는데 여기서는 필요없으니 result는 그냥 추가 하지 않으면 됨!!
+
+----------------------------------------------------------------------
+할것들
+
+상품정보
+DAO, VO 구현 완료
+
+아니야 int result 부분 해야해 (memberDAO insert참고)
+
+ps.close() 도 넣어야함
+
+memberDAO delete~ bag 안되어있음-->UI에 result 반영 안됨
+
+MemberDAO 다 끝났다!!!!!
+insert, delete, update -> bag 파라미터로 받고 result(성공/실패 결과) return
+select -> id 파라미터로 받고 bag(테이블 내용) return
+
+----------------------------------------------------------------------
+
+
+1. 자바 프로그래밍에서 반드시 만들어주어야하는 클래스 2개
+DAO, DTO(VO)
+
+2. DAO와 DTO(VO)의 역할을 각각 정리
+DAO - db연결처리, DML, CRUD
+DTO(VO) - 데이터 전달 bag역할
+
+3. DB에서 하나의 행을 검색한 경우 자바의 어떤 클래스에 넣어주나?
+DTO(VO)
+
+4. DB에서 하나의 행을 검색한 후 자바의 특정한 클래스에 넣어주는 것을 무엇이라고 부르는가?
+ORM(Object Relational Mapping)
+
+5. 검색시 db로 부터 받은 것은?
+테이블
+
+6. 검색시 받은 테이블은 무엇과 무엇으로 구성되어있나?
+항목명(컬럼명)+검색된 데이터
+
+7. 검색결과가 없었다. db로 부터 받은 테이블에는 무엇이 들어있나?
+항목명
+
+8. table.next()는 어떤 처리를 해주는 함수인가? 결과는 어떤 타입?
+검색 결과가 있는지 행을 체크함. row가 있으면 true, 없으면 false => boolean
+
+9. JDBC 4단계는?
+1-드라이버 로딩
+2-연결(url, id, pw)
+3-sql객체생성
+4-sql객체 mysql로 전송
+
+10. SQL문 객체를 만들어주는 클래스는??
+Connection
+
+11. SQL문 객체를 나타내는 클래스는?
+PreparedStatement
+
+12. try ~ catch는 왜 써주었는가?
+외부의 자원을 연결할 때 프로그램이 갑자기 중단될 만큼 위험한 상황이라고 보고 이런 위험한 상황이 발생했을 때 어떻게 대처할지 꼭 써줘야하기 때문
+
+13. Integer.parseInt("100")의 의미는?
+스트링인 100을 숫자형인 정수로 변경
+
+14. 자바 프로그래밍은 3단계로 구성된다. 화면UI — (  처리하는 부분  ) — ( DBMS )
+화면ui - presentation layer
+처리하는 부분 - application layer
+dbms- mysql - data layer
+
+15. UI에서 입력한 id를 가지고 DAO에 받아 DB처리하는 과정을 oracle ppt3- 71페이지 ppt처럼 그림을 그려서 정리해보세요.
