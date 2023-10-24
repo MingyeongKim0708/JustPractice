@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PRODUCT INSERT</title>
+<style>
+* {
+	font-family: "마루 부리";
+	font-size: 20px;
+}
+
+body {
+	background: lightsalmon;
+	text-align: center;
+}
+
+input {
+	background: greenyellow;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+button {
+	background-color: green;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+button:hover {
+	background: tomato;
+	color: white;
+}
+
+.left {
+	width: 120px;
+	background: blue;
+	color: white;
+}
+
+#bottom {
+	background: lightgray;
+	color: yellow;
+}
+</style>
+</head>
+<body>
+	<h3>상품 등록 화면</h3>
+	<hr color="blue">
+	<a href="index.html">첫 페이지로</a>
+	　　<!-- 여백 -->
+	<a href="product.html">상품정보페이지로</a>
+	<form action="insert3.jsp">
+		<table border="1" align="center">
+			<tr>
+				<td class="left">id</td>
+				<td><input name="id" value="pk다르게 입력"></td>
+			</tr>
+			<tr>
+				<td class="left">name</td>
+				<td><input name="name" value="111"></td>
+			</tr>
+			<tr>
+				<td class="left">content</td>
+				<td><input name="content" value="111"></td>
+			</tr>
+			<tr>
+				<td class="left">price</td>
+				<td><input name="price" value="111"></td>
+			</tr>
+			<tr>
+				<td class="left">company</td>
+				<td><input name="company" value="c100"></td>
+			</tr>
+			<tr>
+				<td class="left">img</td>
+				<td><input name="img" value="111.png"></td>
+			</tr>
+			<tr>
+				<td id="bottom" colspan="2">
+					<button type="submit">상품등록요청</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

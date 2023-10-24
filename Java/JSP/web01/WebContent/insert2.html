@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BBS INSERT</title>
+<style>
+* {
+	font-family: "마루 부리";
+	font-size: 20px;
+}
+
+body {
+	background: pink;
+	text-align: center;
+}
+
+input {
+	background: greenyellow;
+}
+
+textarea {
+	background: greenyellow;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+button {
+	background-color: green;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+button:hover {
+	background: tomato;
+	color: white;
+}
+
+.left {
+	width: 120px;
+	background: blue;
+	color: white;
+}
+
+#bottom {
+	background: lightgray;
+	color: yellow;
+}
+</style>
+</head>
+<body>
+	<h3>게시판 글쓰기 화면</h3>
+	<hr color="blue">
+	<a href="index.html">첫 페이지로</a>
+	　　<!-- 여백 -->
+	<a href="bbs.html">게시판정보페이지로</a>
+	<form action="insert2.jsp">
+		<table border="1" align="center">
+			<tr>
+				<td class="left">제목</td>
+				<td><input name="title" value="good"></td>
+			</tr>
+			<tr>
+				<td class="left">내용</td>
+				<td><textarea cols="20" rows="5" name="content">very good</textarea></td>
+			</tr>
+			<tr>
+				<td class="left">작성자</td>
+				<td><input name="writer" value="apple"></td>
+			</tr>
+			<tr>
+				<td id="bottom" colspan="2">
+					<button type="submit">게시글글쓰기요청</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
